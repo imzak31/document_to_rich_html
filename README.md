@@ -62,7 +62,7 @@ And then execute:
 bundle install
 ```
 
-``` or install it yourself as:
+or install it yourself as:
 
 ```bash
 gem install document_to_rich_html
