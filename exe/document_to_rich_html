@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'document_to_rich_html'
+
+# Add your CLI logic here
+# For example:
+if ARGV.empty?
+  puts 'Usage: document_to_rich_html <file_path>'
+else
+  puts DocumentToRichHtml.convert(ARGV[0])
+end
