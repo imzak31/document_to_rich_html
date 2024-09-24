@@ -5,20 +5,20 @@ require_relative 'lib/document_to_rich_html/version'
 Gem::Specification.new do |spec|
   spec.name          = 'document_to_rich_html'
   spec.version       = DocumentToRichHtml::VERSION
-  spec.authors       = ['Your Name']
-  spec.email         = ['your.email@example.com']
+  spec.authors       = ['Adrián Centeno']
+  spec.email         = ['adriandenb@gmail.com']
 
   spec.summary       = 'Convert various document formats to rich HTML'
   spec.description   = 'A gem to convert PDF, Word, Excel, and image files to rich HTML format compatible with Trix editor'
-  spec.homepage      = 'https://github.com/yourusername/document_to_rich_html'
+  spec.homepage      = 'https://github.com/imzak31/document_to_rich_html'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
 
-  spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/yourusername/document_to_rich_html'
-  spec.metadata['changelog_uri'] = 'https://github.com/yourusername/document_to_rich_html/blob/master/CHANGELOG.md'
+  spec.metadata['source_code_uri'] = 'https://github.com/imzak31/document_to_rich_html'
+  spec.metadata['changelog_uri'] = 'https://github.com/imzak31/document_to_rich_html/blob/master/CHANGELOG.md'
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
