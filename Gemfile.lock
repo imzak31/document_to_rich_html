@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    document_to_rich_html (0.1.0)
+    document_to_rich_html (0.2.0)
       docx
       mime-types
       nokogiri

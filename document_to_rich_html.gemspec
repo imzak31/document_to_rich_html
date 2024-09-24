@@ -20,11 +20,9 @@ Gem::Specification.new do |spec|
   spec.metadata['source_code_uri'] = 'https://github.com/imzak31/document_to_rich_html'
   spec.metadata['changelog_uri'] = 'https://github.com/imzak31/document_to_rich_html/blob/master/CHANGELOG.md'
 
-  spec.files = Dir.chdir(File.expand_path(__dir__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  end
+  spec.files = Dir['{lib,exe}/**/*', 'LICENSE.txt', 'README.md', 'CHANGELOG.md']
   spec.bindir        = 'exe'
-  spec.executables   = ['document_to_rich_html']
+  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
   spec.add_dependency 'docx'
